@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yay!</title>
+    <link rel="stylesheet" href="yes-styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Yay! You made my day! ❤️</h1>
+        <p class="celebrate-text">Let's celebrate this special moment together!</p>
+    </div>
+
+    <script>
+        confetti({
+            particleCount: 300,
+            spread: 100,
+            origin: { y: 0.6 },
+            colors: ['#ff4d4d', '#ff9a9e', '#ffffff', '#d32f2f']
+        });
+
+        setTimeout(() => {
+            window.location.href = 'timeline.html';
+        }, 3000);
+    </script>
+</body>
+</html>
