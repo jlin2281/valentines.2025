@@ -14,8 +14,13 @@
             <p class="timeline-item" id="months">5 Months 16 Days</p>
             <p class="timeline-item" id="weeks">24 Weeks 1 Day</p>
         </div>
+        <button id="goBackButton" class="go-back-button">Go Back to Index</button>
     </div>
 
-    <script src="timeline-script.js"></script>
+    <script>
+        document.getElementById('goBackButton').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+    </script>
 </body>
 </html>
